@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0b0614" />
+<meta name="description" content="A little universe of love, made just for Kavi." />
+<title>I Love You, Kavi 💖</title>
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Sinhala:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════ PRELOADER ═══════════ -->
+<div id="loader" class="loader">
+  <div class="loader-heart">
+    <span class="lh-part lh-l"></span>
+    <span class="lh-part lh-r"></span>
+  </div>
+  <p class="loader-text">Loading love<span class="dots"><i>.</i><i>.</i><i>.</i></span></p>
+</div>
+
+<!-- ═══════════ BACKGROUND LAYERS ═══════════ -->
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+  <span class="blob b4"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<!-- ═══════════ CURSOR FX ═══════════ -->
+<div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+<div id="trail" class="trail" aria-hidden="true"></div>
+
+<!-- ═══════════ TOP BAR ═══════════ -->
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<button id="musicBtn" class="music-btn" type="button" aria-label="Play romantic music" title="Play music">
+  <span class="music-icon">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path fill="currentColor" d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/>
+    </svg>
+  </span>
+  <span class="music-waves" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+
+<!-- ═══════════ CONTENT ═══════════ -->
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <p class="eyebrow reveal">A little something I made, only for you</p>
+
+    <h1 class="hero-title reveal">
+      <span class="line-1">I Love You</span>
+      <span class="line-2 script">Kavi</span>
+    </h1>
+
+    <p class="hero-sub reveal si">❤️</p>
+    <p class="hero-sub2 reveal"></p>
+
+    <a href="#letter" class="scroll-cue reveal" aria-label="Scroll down">
+      <span class="mouse"><span class="wheel"></span></span>
+      <span class="cue-text">scroll</span>
+    </a>
+  </section>
+
+  <!-- LOVE CLOCK -->
+  <section class="clock-wrap reveal">
+    <div class="glass clock-card">
+      <p class="clock-label">Loving you for</p>
+      <div class="clock" id="clock">
+        <div class="unit"><b id="cDays">0</b><span>days</span></div>
+        <div class="unit"><b id="cHours">00</b><span>hours</span></div>
+        <div class="unit"><b id="cMins">00</b><span>mins</span></div>
+        <div class="unit"><b id="cSecs">00</b><span>secs</span></div>
+      </div>
+      <p class="clock-note">…and every single one of them was worth it.</p>
+    </div>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section class="letter" id="letter">
+    <div class="glass letter-card reveal">
+      <div class="card-orn">❦</div>
+      <h2 class="section-title">A letter from my heart</h2>
+      <p class="typewriter" id="typewriter" data-text="Kavi, from the day you walked into my life, every ordinary day started to feel like a love song. Your smile is my favourite sunrise, your laugh my favourite melody. I don't need the whole universe — I just need you. I love you, Kavi. Today, tomorrow, and every single day after."></p>
+      <p class="signature script">— Yours, always</p>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="reasons" id="reasons">
+    <h2 class="section-title reveal">Why I love you</h2>
+    <p class="section-sub reveal">Tap a card… there are a few things I never told you.</p>
+
+    <div class="cards">
+      <button class="flip reveal" type="button">
+        <span class="flip-inner">
+          <span class="flip-front"><span class="ico">💫</span><span class="ft">Your smile</span></span>
+          <span class="flip-back">It makes even my worst days feel completely okay.</span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button">
+        <span class="flip-inner">
+          <span class="flip-front"><span class="ico">🎶</span><span class="ft">Your laugh</span></span>
+          <span class="flip-back">My favourite sound in the entire world. I'd replay it forever.</span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button">
+        <span class="flip-inner">
+          <span class="flip-front"><span class="ico">💗</span><span class="ft">Your heart</span></span>
+          <span class="flip-back">So kind, so soft, so beautifully and uniquely yours.</span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button">
+        <span class="flip-inner">
+          <span class="flip-front"><span class="ico">✨</span><span class="ft">Your eyes</span></span>
+          <span class="flip-back">I get lost in them every time, and I never want to be found.</span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button">
+        <span class="flip-inner">
+          <span class="flip-front"><span class="ico">🌙</span><span class="ft">Your everything</span></span>
+          <span class="flip-back">You are my calm, my chaos, and my favourite person.</span>
+        </span>
+      </button>
+      <button class="flip reveal" type="button">
+        <span class="flip-inner">
+          <span class="flip-front"><span class="ico">💞</span><span class="ft">Us</span></span>
+          <span class="flip-back">Whatever comes next, I want to face every bit of it with you.</span>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- PROPOSAL -->
+  <section class="proposal" id="proposal">
+    <div class="glass propose-card reveal">
+      <p class="eyebrow">One last thing…</p>
+      <h2 class="propose-q">Kavi, will you be mine —<br /><span class="script grad">forever?</span></h2>
+
+      <div class="btns" id="btns">
+        <button id="yesBtn" class="btn yes" type="button">Yes 💗</button>
+        <button id="noBtn" class="btn no" type="button">No</button>
+      </div>
+
+      <p class="hint" id="hint">(Psst… the "No" button is a little shy. Try it 😏)</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with 💖, a lot of code, and a lot more love — just for <b>Kavi</b>.</p>
+  </footer>
+
+</main>
+
+<!-- ═══════════ CELEBRATION ═══════════ -->
+<div id="celebrate" class="celebrate" aria-hidden="true">
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <div class="celebrate-inner">
+    <div class="big-heart">
+      <svg viewBox="0 0 32 29.6" aria-hidden="true">
+        <path d="M16 29.6l-2.4-2.2C5.4 19.6 0 14.7 0 8.7 0 3.9 3.8 0 8.6 0c2.7 0 5.3 1.3 7 3.3C17.1 1.3 19.7 0 22.4 0 27.2 0 31 3.9 31 8.7c0 6-5.4 10.9-13.6 18.7L16 29.6z"/>
+      </svg>
+    </div>
+    <h2 class="celebrate-title">She said YES! 💖</h2>
+    <p class="celebrate-sub">You just made me the happiest person alive, Kavi.<br />I promise to love you endlessly — through everything.</p>
+    <p class="celebrate-sig script">I Love You, Kavi 💍</p>
+    <div class="celebrate-actions">
+      <button id="againBtn" class="btn ghost" type="button">Celebrate again 🎉</button>
+      <button id="closeBtn" class="btn ghost" type="button">Back to us</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
